@@ -1,68 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT
 
-## Available Scripts
 
-In the project directory, you can run:
+## ROUTER 적용
+* Router를 활용해서 사용자가 입력한 URL을 통해 특정 components를 불러오는 방법 인지 (우리의 경우 www.esls.io/home  www.esls.io/search 등등)
+* React 패키지 중 React-router-dom을 이용해서 hashRouter와 Router 컴퍼넌트를 이용하면 이게 생각보다 간편하게 적용됨
 
-### `yarn start`
+## API 활용
+* Javascript의 Fetch()함수를 이용해서 데이터를 가져오고 활용할 수 있겠지만 이렇게 하려면 js 경력치가 높아야 될 필요성이 있으니
+* Axios 패키지를 활용해서 API에서 데이터를 가져오고(URL값으로 json파일 기반의 데이터 입수 후)
+* 입수전과 입수후를 체크해서
+* 화면에 데이터 출력
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Props 검사
+* API로 입수한 데이터가 원하는 형태와 맞는지 검사 - 숫자인지 문자인지, 배열인지 등등
+* Prop-types 패키지를 설치하고
+* 검사 후 반영
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## 동적 데이터를 다루는 State
+* Objects의 데이터가 일부 변경될 경우, 변경된 것만 체크해서 반영
+* 추가될 경우 기존 것은 남겨두고 추가된 것만 추가 반영
+* 이런 것이 가능하도록 구성한 React.Component가 클래스형 컴퍼넌트 state = {}
