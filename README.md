@@ -2,7 +2,7 @@
 
 
 ## ROUTER 적용
-* Router를 활용해서 사용자가 입력한 URL을 통해 특정 components를 불러오는 방법 인지 (우리의 경우 www.esls.io/home  www.esls.io/search 등등)
+* Router를 활용해서 사용자가 입력한 URL을 통해 특정 components를 불러오는 방법 인지
 * React 패키지 중 React-router-dom을 이용해서 hashRouter와 Router 컴퍼넌트를 이용하면 이게 생각보다 간편하게 적용됨
 
 ## API 활용
